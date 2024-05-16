@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My CV</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <style>
+    .navbar-sea-blue {
+      background-color: #5f9ea0; /* Warna biru laut */
+    }
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      background: url(https://wallpaperaccess.com/full/232341.jpg) no-repeat center center fixed;
+      background-size: cover;
+    }
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 20px 15px;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .profile {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .profile img {
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 3px solid #5f9ea0; /* Warna biru laut */
+    }
+    .description {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .description h1 {
+      color: #5f9ea0; /* Warna biru laut */
+    }
+    .data {
+      text-align: justify;
+      font-size: 18px;
+      margin: 0 100px;
+    }
+    .btn-green {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .btn-green:hover {
+      background-color: #218838;
+    }
+    hr {
+      border-top: 1px solid #ddd;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .row-section {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .col-left, .col-right {
+      width: 48%;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #5f9ea0;
+      color: white;
+      border-top: 1px solid #ddd;
+      margin-top: auto; /* Pushes the footer to the bottom */
+    }
+    .footer-left {
+      font-size: 14px;
+    }
+    .footer-right a {
+      margin-left: 10px;
+      transition: transform 0.3s;
+    }
+    .footer-right a:hover {
+      transform: scale(1.2);
+    }
+    .footer-right img {
+      width: 30px;
+      height: 30px;
+      filter: invert(100%);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-sea-blue">
+    <a class="navbar-brand" href="#">My CV</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tentang.html">Tentang</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="skills.html">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="project.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="galeri.html">Galeri</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontak.html">Kontak</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="description">
+      <h1>Halo, Saya Muzaki</h1>
+    </div>
+    <div class="data">
+      <p>Situs ini berisi segala sesuatu tentang saya. Untuk Menghubungi saya, silakan menuju ke halaman kontak</p>
+      <a href="tentang.html" class="btn-green">Selengkapnya tentang saya</a>
+      <hr />
+      <div class="row-section">
+        <div class="col-left">
+          <h2>Skills</h2>
+          <table>
+            <tr>
+              <th>Skill</th>
+              <th>Level</th>
+            </tr>
+            <tr>
+              <td>C++</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td>Web Development</td>
+              <td>Beginner</td>
+            </tr>
+            <!-- Add more skills as needed -->
+          </table>
+        </div>
+        <div class="col-right">
+          <h2>Projects</h2>
+          <table>
+            <tr>
+              <th>Projects</th>
+              <th>Tahun</th>
+            </tr>
+            <tr>
+              <td>SmartFarm</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>Body Mass Index (BMI) berbasis KNN</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Monitoring ESC berbasis AI</td>
+              <td>2023</td>
+            </tr>
+            <!-- Add more projects as needed -->
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-left">
+      &copy; 2024 by Muzaki
+    </div>
+    <div class="footer-right">
+      <a href="https://www.instagram.com/muzaki.mu?igsh=MWdjdjhmYTJpZXlqaQ==" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+      </a>
+      <a href="https://wa.me/6281330321966" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+      </a>
+    </div>
+  </div>
+</body>
+</html>
